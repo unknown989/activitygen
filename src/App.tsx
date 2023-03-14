@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Card from "./components/Card";
 
 function App() {
+  const [card, setCard] = useState(<Card />);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <div className="container">
+        {card}
+        <button
+          className="button"
+          onClick={() => {
+            setCard(<></>);
+            setCard(<Card key={Math.round(Math.random() * 10000)} />);
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          Generate
+        </button>
+      </div>
     </div>
   );
 }
