@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/activitygen/static/css/main.5db1ede0.css",
+    "main.js": "/activitygen/static/js/main.04d041da.js",
+    "index.html": "/activitygen/index.html",
+    "main.5db1ede0.css.map": "/activitygen/static/css/main.5db1ede0.css.map",
+    "main.04d041da.js.map": "/activitygen/static/js/main.04d041da.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5db1ede0.css",
+    "static/js/main.04d041da.js"
+  ]
+}
